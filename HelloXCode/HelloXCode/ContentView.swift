@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+func add(_ a: Int, _ b: Int) -> Int {
+    return a + b
+}
+
+func sumNumbers() {
+    var total = 0
+    for number in 1...5 {
+        total = add(total, number)
+    }
+    print("Итого: \(total)")
+}
+
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -15,6 +27,9 @@ struct ContentView: View {
                 .foregroundStyle(.blue)
             Text("Hello, Ivan!")
                 .foregroundStyle(.red)
+                .onAppear{
+                    sumNumbers()
+                }
         }
         .padding()
     }
