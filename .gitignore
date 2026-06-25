@@ -1,0 +1,11 @@
+# Xcode — пользовательские настройки и состояние
+xcuserdata/
+*.xcuserstate
+
+# Папки сборки
+build/
+DerivedData/
+
+# Системный мусор macOS
+.DS_Store
+
